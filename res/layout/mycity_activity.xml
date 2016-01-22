@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   <RelativeLayout
+        android:id="@+id/rll_news"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        
+        android:background="@drawable/actionbar_background" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:src="@android:drawable/ic_menu_revert"
+            android:layout_centerVertical="true"
+            android:id="@+id/mycity_igLeft"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/tv_newsadd_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我关注的城市"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/ig_addcity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:src="@drawable/addicom"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+     <activity.SlideCutListView
+        android:id="@+id/slideCutListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:listSelector="@android:color/transparent"
+        android:divider="@drawable/reader_item_divider"
+        android:cacheColorHint="@android:color/transparent">
+    </activity.SlideCutListView>
+
+</LinearLayout>
